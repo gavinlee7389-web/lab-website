@@ -1,0 +1,34 @@
+title: "Your Lab Name"
+description: "Our research group website."
+url: ""          # 先留空，后面部署好再改
+baseurl: ""      # 如果仓库名不是 username.github.io，之后再设
+
+author:
+  name: "PI Name"
+  email: "pi@example.com"
+
+theme: minima
+
+header_pages:
+  - index.md
+  - people.md
+  - research.md
+  - publications.md
+  - news.md
+  - contact.md
+
+collections:
+  people:
+    output: true
+    permalink: /people/:name/
+  news:
+    output: true
+    permalink: /news/:name/
+  publications:
+    output: true
+    permalink: /publications/:name/
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
