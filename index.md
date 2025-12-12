@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: single
 title: "Home"
+permalink: /
 ---
 
 欢迎来到 **Your Lab Name** 课题组网站！
