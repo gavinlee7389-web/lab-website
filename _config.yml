@@ -1,34 +1,41 @@
 title: "Your Lab Name"
+name: "Your Lab Name"
 description: "Our research group website."
-url: ""          # 先留空，后面部署好再改
-baseurl: ""      # 如果仓库名不是 username.github.io，之后再设
 
-author:
-  name: "PI Name"
-  email: "pi@example.com"
+# 你当前网站的域名信息
+url: "https://gavinlee7389-web.github.io"
+baseurl: "/lab-website"   # 仓库名是 lab-website 就这样写
 
-theme: minima
+# 使用 Minimal Mistakes 主题（通过 remote_theme）
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-header_pages:
-  - index.md
-  - people.md
-  - research.md
-  - publications.md
-  - news.md
-  - contact.md
-
-collections:
-  people:
-    output: true
-    permalink: /people/:name/
-  news:
-    output: true
-    permalink: /news/:name/
-  publications:
-    output: true
-    permalink: /publications/:name/
-
-markdown: kramdown
+# 插件（必须要有这些）
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-include-cache
+
+# 让 _pages 目录中的文件也会被处理（后面会用）
+include:
+  - _pages
+
+author:
+  name: "PI Name"
+  bio: "Short bio about the PI."
+  avatar: "/assets/images/pi.jpg"  # 暂时可以先这样写，将来再放头像也行
+
+# 默认布局设置：所有 page / post 都用 single 布局，并在左侧显示作者信息
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
