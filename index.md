@@ -7,7 +7,7 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.35"
-  overlay_image: /lab-website/assets/images/banner.jpg
+  overlay_image: /assets/images/banner.jpg
   caption: "Your Lab Name @ Your Institution"
   actions:
     - label: "Join Us"
