@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Your Lab Name"
+title: "Cheng Lab"
 permalink: /
 author_profile: false
 
@@ -8,16 +8,16 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.35"
   overlay_image: /assets/images/banner.jpg
-  caption: "Your Lab Name @ Your Institution"
+  caption: "Cheng Lab @ PUMC"
   actions:
     - label: "Join Us"
       url: "/lab-website/contact/"
 
 intro:
   - excerpt: >
-      欢迎来到 **Your Lab Name** 课题组网站！这里是你们的研究简介，例如：
-      - 所属单位 / 医院 / 学院
-      - 主要研究方向（肿瘤共病、炎症–免疫–代谢–衰老等）
+      欢迎来到 **Cheng Lab** 课题组网站！这里是你们的研究简介，例如：
+      - 北京协和医学院血液病医院/血液学研究所
+      - 造血干细胞相关研究
       - 是否在招收博士 / 硕士 / 博后
 
 feature_row:
