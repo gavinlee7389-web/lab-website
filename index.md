@@ -15,10 +15,7 @@ header:
 
 intro:
   - excerpt: >
-      欢迎来到 **Cheng Lab** 课题组网站！这里是你们的研究简介，例如：
-      - 北京协和医学院血液病医院/血液学研究所
-      - 造血干细胞相关研究
-      - 是否在招收博士 / 硕士 / 博后
+      欢迎来到 **Cheng Lab** 课题组网站！
 
 feature_row:
   - title: "Research"
