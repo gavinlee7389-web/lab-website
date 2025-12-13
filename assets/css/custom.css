@@ -2,7 +2,7 @@
 
 /* 针对首页 splash 大图 */
 .page__hero--overlay {
-  min-height: 85vh;   /* 75% 屏幕高度 */
+  min-height: 85vh;   /* 85% 屏幕高度 */
 }
 
 /* 让背景图始终铺满 */
