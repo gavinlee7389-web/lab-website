@@ -1,8 +1,4 @@
 ---
-<div class="home-photo">
-  <img src="/lab-website/assets/images/banner.jpg" alt="Lab photo">
-</div>
-
 layout: splash
 title: "Cheng Lab"
 permalink: /
