@@ -7,9 +7,7 @@ author_profile: false
 
 header:
   overlay_color: "#7a1236"
-  overlay_filter: "1"
-  overlay_image: ""
-
+  
 intro:
   - excerpt: >
       欢迎来到 **Cheng Lab** 课题组网站！
