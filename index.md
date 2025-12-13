@@ -31,6 +31,9 @@ feature_row:
     btn_label: "See publications"
     btn_class: "btn--primary"
 ---
+<div class="home-photo">
+  <img src="/lab-website/assets/images/banner.jpg" alt="Lab photo">
+</div>
 
 {% include feature_row id="intro" type="center" %}
 {% include feature_row %}
