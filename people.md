@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "People"
+title: ""
 permalink: /people/
 ---
 
