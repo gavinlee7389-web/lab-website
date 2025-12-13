@@ -39,3 +39,18 @@ feature_row:
 
 {% include feature_row id="intro" type="center" %}
 {% include feature_row %}
+
+<hr>
+
+## Latest News
+
+<ul>
+  {% for post in site.posts limit:3 %}
+    <li>
+      <strong>{{ post.date | date: "%Y-%m-%d" }}</strong> —
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<a class="btn btn--primary" href="{{ '/news/' | relative_url }}">More News</a>
