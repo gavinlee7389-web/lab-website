@@ -6,7 +6,7 @@
 
 /* ===== Increase splash banner height ===== */
 .page__hero--overlay {
-  min-height: 75vh;   /* 你想更高就改成 85vh 或 100vh */
+  min-height: 40vh;   /* 你想更高就改成 85vh 或 100vh */
 }
 
 /* ===== University-style masthead (top nav) ===== */
@@ -47,4 +47,20 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+/* ===== Home photo banner under title block ===== */
+.home-photo {
+  width: 100%;
+  height: 520px;       /* 想更高：600/700；想更矮：420/480 */
+  overflow: hidden;
+  margin: 0;
+}
+
+.home-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
