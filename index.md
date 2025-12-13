@@ -1,6 +1,7 @@
 ---
 layout: splash
 title: "Cheng Lab"
+classes: home-hero
 permalink: /
 author_profile: false
 
