@@ -4,14 +4,24 @@ title: ""
 permalink: /publications/
 ---
 
-# Publications
+{% assign pubs = site.publications | sort: "year" | reverse %}
 
-（先手动写一些，后面可以再精细化）
+{% assign years = pubs | map: "year" | uniq %}
 
-## 2024
+{% for y in years %}
+## {{ y }}
 
-- 作者 A, 作者 B, 作者 C. *Paper title*. Journal, 2024.
+<ul>
+  {% for p in pubs %}
+    {% if p.year == y %}
+      <li>
+        <strong>{{ p.title }}</strong><br>
+        {% if p.authors %}{{ p.authors }}<br>{% endif %}
+        {% if p.journal %}<em>{{ p.journal }}</em>{% endif %}
+        {% if p.doi %} — <a href="{{ p.doi }}">DOI</a>{% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
-## 2023
-
-- ……
+{% endfor %}
