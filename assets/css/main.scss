@@ -6,7 +6,7 @@
 
 /* ===== Increase splash banner height ===== */
 .page__hero--overlay {
-  min-height: 40vh;   /* 你想更高就改成 85vh 或 100vh */
+  min-height: 30vh;   /* 你想更高就改成 85vh 或 100vh */
 }
 
 /* ===== University-style masthead (top nav) ===== */
@@ -63,4 +63,12 @@
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+/* Reduce gap between hero and photo */
+.home-hero .page__hero--overlay {
+  margin-bottom: 0 !important;
+}
+.home-photo {
+  margin-top: 0 !important;
 }
