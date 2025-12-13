@@ -72,3 +72,17 @@
 .home-photo {
   margin-top: 0 !important;
 }
+
+/* ===== Center nav & active red highlight ===== */
+.greedy-nav {
+  justify-content: center;
+}
+
+.greedy-nav a:hover {
+  color: #7a1236;
+}
+
+.greedy-nav .active > a {
+  color: #7a1236;
+  border-bottom: 2px solid #7a1236;
+}
