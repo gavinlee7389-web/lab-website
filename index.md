@@ -1,17 +1,17 @@
 ---
+<div class="home-photo">
+  <img src="/lab-website/assets/images/banner.jpg" alt="Lab photo">
+</div>
+
 layout: splash
 title: "Cheng Lab"
 permalink: /
 author_profile: false
 
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.35"
-  overlay_image: /assets/images/banner.jpg
-  caption: "Cheng Lab @ PUMC"
-  actions:
-    - label: "Join Us"
-      url: "/lab-website/contact/"
+  overlay_color: "#7a1236"
+  overlay_filter: "1"
+  overlay_image: ""
 
 intro:
   - excerpt: >
