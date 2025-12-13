@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "News"
+title: ""
 permalink: /news/
 ---
 
