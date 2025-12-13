@@ -8,3 +8,28 @@
 .page__hero--overlay {
   min-height: 75vh;   /* 你想更高就改成 85vh 或 100vh */
 }
+
+/* ===== University-style masthead (top nav) ===== */
+.masthead {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.masthead__inner-wrap {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.greedy-nav a {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.greedy-nav__toggle {
+  margin-left: 0.5rem;
+}
