@@ -40,3 +40,11 @@
   background-color: #7a1236 !important; /* 酒红/血液红 */
   background-image: none !important;
 }
+
+/* Center title on red block */
+.home-hero .page__hero--overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
