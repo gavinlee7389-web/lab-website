@@ -40,4 +40,8 @@ defaults:
     values:
       layout: "single"
       author_profile: true
-      
+
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
