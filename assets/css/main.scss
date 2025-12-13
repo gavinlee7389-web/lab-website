@@ -1,0 +1,10 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minimal-mistakes";
+
+/* ===== Increase splash banner height ===== */
+.page__hero--overlay {
+  min-height: 75vh;   /* 你想更高就改成 85vh 或 100vh */
+}
