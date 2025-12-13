@@ -15,6 +15,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-include-cache
 
+# Custom CSS
+custom_css:
+  - /assets/css/custom.css
+
 # 让 _pages 目录中的文件也会被处理（后面会用）
 include:
   - _pages
@@ -39,3 +43,4 @@ defaults:
     values:
       layout: "single"
       author_profile: true
+      
