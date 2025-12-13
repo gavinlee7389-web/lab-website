@@ -1,0 +1,11 @@
+/* ===== Increase splash banner height ===== */
+
+/* 针对首页 splash 大图 */
+.page__hero--overlay {
+  min-height: 75vh;   /* 75% 屏幕高度 */
+}
+
+/* 让背景图始终铺满 */
+.page__hero--overlay .page__hero-image {
+  object-fit: cover;
+}
