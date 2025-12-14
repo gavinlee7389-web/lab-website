@@ -1,16 +1,20 @@
 ---
 layout: splash
-title: "Cheng Lab"
+title: ""
 classes: home-hero
 permalink: /
 author_profile: false
 
 header:
   overlay_color: "#7a1236"
+  overlay_filter: "1"
+  caption: '<div class="hero-brand">
+   <div class="hero-title">Prof. Tao Cheng&apos;s Research Group</div>
+   <div class="hero-subtitle">程 涛 教 授 课 题 组 主 页</div>
+  </div>'
   
 intro:
-  - excerpt: >
-      欢迎来到 **Cheng Lab** 课题组网站！
+  - excerpt: ""
 
 feature_row:
   - title: "Research"
