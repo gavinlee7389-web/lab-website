@@ -113,7 +113,7 @@ html, body {
 /* 2) 给导航让出更小的logo空间（原来 260px 太大了） */
 .masthead__menu {
   position: relative;
-  padding-left: 190px;   /* 让出空间变小：logo更靠左、菜单也更靠左 */
+  padding-left: 260px;   /* 让出空间变小：logo更靠左、菜单也更靠左 */
 }
 
 /* 3) 第1个logo：更贴左 */
@@ -123,8 +123,8 @@ html, body {
   left: 8px;             /* 原来 18px → 更靠左 */
   top: 50%;
   transform: translateY(-50%);
-  width: 52px;
-  height: 52px;
+  width: 72px;
+  height: 72px;
   background: url("/lab-website/assets/images/pumc.png") no-repeat center / contain;
 }
 
@@ -132,11 +132,11 @@ html, body {
 .masthead__menu::after {
   content: "";
   position: absolute;
-  left: 58px;            /* 原来 86px → 两个logo更近 */
+  left: 88px;            /* 原来 86px → 两个logo更近 */
   top: 50%;
   transform: translateY(-50%);
-  width: 125px;          /* 稍微收窄一点，避免占太多空间 */
-  height: 52px;
+  width: 180px;          /* 稍微收窄一点，避免占太多空间 */
+  height: 72px;
   background: url("/lab-website/assets/images/institute.png") no-repeat center / contain;
 }
 
