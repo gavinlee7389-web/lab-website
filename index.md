@@ -39,13 +39,13 @@ feature_row:
   <div class="slider" data-autoplay="true" data-interval="4500">
     <div class="slides">
       <div class="slide is-active">
-        <img src="/lab-website/assets/images/slider/01.jpg" alt="slide 1">
+        <img src="/lab-website/assets/images/slider/01.JPG" alt="slide 1">
       </div>
       <div class="slide">
-        <img src="/lab-website/assets/images/slider/02.jpg" alt="slide 2">
+        <img src="/lab-website/assets/images/slider/02.JPG" alt="slide 2">
       </div>
       <div class="slide">
-        <img src="/lab-website/assets/images/slider/03.jpg" alt="slide 3">
+        <img src="/lab-website/assets/images/slider/03.JPG" alt="slide 3">
       </div>
     </div>
 
