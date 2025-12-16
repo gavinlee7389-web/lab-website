@@ -109,40 +109,46 @@ html, body {
   padding-bottom: 1.4rem;
 }
 
-/* 给导航整体让出左侧放logo的空间 */
+
+/* 2) 给导航让出更小的logo空间（原来 260px 太大了） */
 .masthead__menu {
   position: relative;
-  padding-left: 260px;     /* 两个logo占位宽度：不够就调大 */
+  padding-left: 190px;   /* 让出空间变小：logo更靠左、菜单也更靠左 */
 }
 
-/* 第1个logo（圆形校徽） */
+/* 3) 第1个logo：更贴左 */
 .masthead__menu::before {
   content: "";
   position: absolute;
-  left: 18px;
+  left: 8px;             /* 原来 18px → 更靠左 */
   top: 50%;
   transform: translateY(-50%);
-  width: 54px;
-  height: 54px;
-  background: url("/lab-website/assets/images/pumc.png") no-repeat center / contain;
+  width: 52px;
+  height: 52px;
+  background: url("/lab-website/assets/images/logo-pumc.png") no-repeat center / contain;
 }
 
-/* 第2个logo（机构文字/标识） */
+/* 4) 第2个logo：更靠近第1个 */
 .masthead__menu::after {
   content: "";
   position: absolute;
-  left: 86px;              /* 第二个logo紧挨第一个logo右侧 */
+  left: 58px;            /* 原来 86px → 两个logo更近 */
   top: 50%;
   transform: translateY(-50%);
-  width: 160px;
-  height: 54px;
-  background: url("/lab-website/assets/images/institute.png") no-repeat center / contain;
+  width: 125px;          /* 稍微收窄一点，避免占太多空间 */
+  height: 52px;
+  background: url("/lab-website/assets/images/logo-institute.png") no-repeat center / contain;
 }
 
-/* 小屏幕别挤爆：隐藏第二个logo，缩小第一个 */
+/* 5) 删除 logo 右侧的 “CHENG LAB”（主题自带站点标题） */
+.masthead .site-title {
+  display: none !important;
+}
+
+/* 小屏处理：更紧凑 */
 @media (max-width: 768px) {
-  .masthead__menu { padding-left: 90px; }
-  .masthead__menu::before { width: 40px; height: 40px; left: 12px; }
+  .masthead__menu { padding-left: 70px; }
+  .masthead__menu::before { width: 40px; height: 40px; left: 8px; }
   .masthead__menu::after { display: none; }
 }
 
