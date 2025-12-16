@@ -158,3 +158,85 @@ html, body {
   padding-top: 40px !important;
   padding-bottom: 40px !important;
 }
+
+
+/* ===== Homepage slider ===== */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 520px;       /* 轮播高度：你现在觉得正好就保持 520 */
+  overflow: hidden;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 600ms ease;
+}
+
+.slide.is-active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.65);
+  background: rgba(0,0,0,0.25);
+  color: #fff;
+  font-size: 34px;
+  line-height: 42px;
+  cursor: pointer;
+}
+
+.slider-btn.prev { left: 16px; }
+.slider-btn.next { right: 16px; }
+
+.slider-btn:hover {
+  background: rgba(0,0,0,0.35);
+}
+
+/* Dots */
+.dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 14px;
+  z-index: 6;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.25);
+  cursor: pointer;
+}
+
+.dot.is-active {
+  background: rgba(255,255,255,0.95);
+}
