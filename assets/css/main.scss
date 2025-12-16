@@ -125,7 +125,7 @@ html, body {
   transform: translateY(-50%);
   width: 52px;
   height: 52px;
-  background: url("/lab-website/assets/images/logo-pumc.png") no-repeat center / contain;
+  background: url("/lab-website/assets/images/pumc.png") no-repeat center / contain;
 }
 
 /* 4) 第2个logo：更靠近第1个 */
@@ -137,7 +137,7 @@ html, body {
   transform: translateY(-50%);
   width: 125px;          /* 稍微收窄一点，避免占太多空间 */
   height: 52px;
-  background: url("/lab-website/assets/images/logo-institute.png") no-repeat center / contain;
+  background: url("/lab-website/assets/images/institute.png") no-repeat center / contain;
 }
 
 /* 5) 删除 logo 右侧的 “CHENG LAB”（主题自带站点标题） */
