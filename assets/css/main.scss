@@ -97,7 +97,51 @@
   width: 100vw;
 }
 
+
 /* 防止横向滚动条 */
 html, body {
   overflow-x: hidden;
+}
+
+/* ===== Masthead: taller + two logos on the left ===== */
+.masthead__inner-wrap {
+  padding-top: 1.4rem;     /* 顶部白色栏高度：调大=更高 */
+  padding-bottom: 1.4rem;
+}
+
+/* 给导航整体让出左侧放logo的空间 */
+.masthead__menu {
+  position: relative;
+  padding-left: 260px;     /* 两个logo占位宽度：不够就调大 */
+}
+
+/* 第1个logo（圆形校徽） */
+.masthead__menu::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 54px;
+  height: 54px;
+  background: url("/lab-website/assets/images/pumc.png") no-repeat center / contain;
+}
+
+/* 第2个logo（机构文字/标识） */
+.masthead__menu::after {
+  content: "";
+  position: absolute;
+  left: 86px;              /* 第二个logo紧挨第一个logo右侧 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 160px;
+  height: 54px;
+  background: url("/lab-website/assets/images/institute.png") no-repeat center / contain;
+}
+
+/* 小屏幕别挤爆：隐藏第二个logo，缩小第一个 */
+@media (max-width: 768px) {
+  .masthead__menu { padding-left: 90px; }
+  .masthead__menu::before { width: 40px; height: 40px; left: 12px; }
+  .masthead__menu::after { display: none; }
 }
