@@ -60,6 +60,8 @@ feature_row:
   </div>
 </div>
 
+<script src="/lab-website/assets/js/slider.js"></script>
+
 {% include feature_row id="intro" type="center" %}
 {% include feature_row %}
 
