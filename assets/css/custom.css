@@ -9,3 +9,9 @@
 .page__hero--overlay .page__hero-image {
   object-fit: cover;
 }
+
+/* ===== Homepage slider height control ===== */
+
+.homepage-slider {
+  height: 70vh;
+}
