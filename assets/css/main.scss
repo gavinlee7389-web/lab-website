@@ -145,3 +145,10 @@ html, body {
   .masthead__menu::before { width: 40px; height: 40px; left: 12px; }
   .masthead__menu::after { display: none; }
 }
+
+/* ===== Make the maroon title block shorter (vertical) ===== */
+.home-hero .page__hero--overlay {
+  min-height: 160px !important;   /* 酒红色块高度：想更矮就 140-160 */
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
